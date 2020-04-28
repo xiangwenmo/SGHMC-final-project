@@ -15,10 +15,10 @@ import sghmc
 
 ### Contents
 
--`sghmc/` : source codes for the package  
+- `sghmc/` : source codes for the package  
 
--`examples/`: two simulation examples and plots  
+- `examples/`: two simulation examples and plots  
 
--`opt:comparison/`: optimization and comparing algorithm with `pystan` and `pyhmc`  
+- `opt:comparison/`: optimization and comparing algorithm with `pystan` and `pyhmc`  
 
--`report/`: project report
+- `report/`: project report
