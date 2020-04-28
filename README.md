@@ -17,7 +17,7 @@ import sghmc
 
 - `sghmc/` : source codes for the package  
 
-- `examples/`: two simulation examples and plots  
+- `examples/`: two simulation examples and a attempt to implement on real datasets  
 
 - `opt:comparison/`: optimization and comparing algorithm with `pystan` and `pyhmc`  
 
