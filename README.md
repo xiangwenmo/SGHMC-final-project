@@ -1,5 +1,5 @@
 # SGHMC-final-project
-Implement Stochastic Gradient Hamilton Monte Carlo
+Implement Stochastic Gradient Hamilton Monte Carlo  
 Final project for STA-663, by Xiangwen Mo(xiangwen.mo@duke.edu), Bingruo Wu(bingruo.wu@duke.edu)
 
 Details about SGHMC are in [paper by Tianqi Chen Emily B. Fox Carlos Guestrin](https://arxiv.org/pdf/1402.4102.pdf)
