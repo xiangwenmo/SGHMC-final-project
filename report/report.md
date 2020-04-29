@@ -169,16 +169,16 @@ Next, we compared the simulation results from package 'Pystan' and ’Pyhmc‘ t
 
 ### Example 2: Mix Normal by SGHMC
 
-The smapling distribution is a mix normal and defined as $X \sim \frac{1}{2}N(\mu_1,1)+\frac{1}{2}N(\mu_2,1)$ as the original paper stated,therefore, this example will use SGHMC to simulate this distribution with the prior of $\mu_1$ and $\mu_2$ being $N(0,10)$.
+The smapling distribution is a mix normal and defined as $X \sim \frac{1}{2}N(\mu_1,1)+\frac{1}{2}N(\mu_2,1)$, where true $\mu = (-3,3)$. We choose C, $\hat{V}$, and M as identity matrix, learning rate $\epsilon = 0.01$. This example will use SGHMC to simulate this distribution with the prior of $\mu_1$ and $\mu_2$ being $N(0,10)$.
 
-![Mix_Normal](ex2.png){width=350px}  
+![Mix_Normal](ex2_sghmc.png){width=380px}  
 
 ### Example 2: Mix Normal by Pystan and Pyhmc
 
 After showing the result from SGHMC, this part will show our results from using Pystan and Pyhmc and do the comparison as well. 
 
 
-![Pyhmc](ex2_hmc.png){width=270px}![Pystan](ex2_pystan.png){width=270px}
+![Pyhmc](ex2_hmc.png){width=290px}![Pystan](ex2_pystan.png){width=270px}
 
 Overall, compared to the graph from Pyhmc in example 2, Pystan performs better since it looks more similar to a mix normal distribution. Pystan performs poor in both examples and also not as good as SGHMC in example 1. However, in example 2, results from pystan looks better than SGHMC, that is because the use of Pystan is quiet easy since it only needs distribution and data set to do the simulation, while SGHMC needs user specified elements, such as C and V. Therefore, if user specified elements are inaccurate, the resutls might be wrong. But if users can approximate accurate and precise input, SGHMC can contribute better results than Pystan and Pyhmc.
 
@@ -186,7 +186,7 @@ Overall, compared to the graph from Pyhmc in example 2, Pystan performs better s
 
 The algorithm is highly sensitive to the choice of hyper-parameters. We use the 'Wine' data from \textbf{https://archive.ics.uci.edu/ml/index.php} and attempted to fit a linear regression to the dataset to apply the algorithm. This dataset has 178 observations and we firstly used two variables: 'Flavanoids' and 'Phenols' to fit a graph as below:
 
-![linear](linear.jpg){width=300px}!
+![linear](linear.png){width=300px}!
 
 This graph seems to be a linear regression, so we thought using SGHMC can estimate the coefficients. However, when we used this algorithm to do the estimation, we ended up getting 'NAN'. We tried to use various combinations of parameters and tried different inputs to implement the algorithm, all of the results are not reasonable enough.This failure indicates a limitation of the SGHMC algorithm, which is users should choose reasonable and accurate initial inputs to ensure the performance of SGHMC.
 
