@@ -1,9 +1,3 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
-
 # STA663 Final Project: Stochstic Gradient Hamiltonian Monte Carlo in Python
 
 Xiangwen Mo, Bingruo Wu
