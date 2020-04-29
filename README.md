@@ -9,8 +9,8 @@ Details about SGHMC are in [paper by Tianqi Chen Emily B. Fox Carlos Guestrin](h
 run
 
 ```
-!pip install --index-url https://test.pypi.org/simple/ xmbwsghmc==0.0.1
-import sghmc
+!pip install --index-url https://test.pypi.org/simple/ xmbwsghmc==0.0.2
+from sghmc import sghmc_algo
 ```
 
 ### Contents
